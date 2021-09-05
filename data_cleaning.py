@@ -46,13 +46,13 @@ def clean_data(train_df, test_df):
     train_df.Age = train_df.groupby(["Family", "Pclass"]).Age.apply(lambda x: x.fillna(x.mean()))
     test_df.Age = test_df.groupby(["Family", "Pclass"]).Age.apply(lambda x: x.fillna(x.mean()))
 
-    train_df['Age'][159] = 5
-    train_df['Age'][180] = 7
-    train_df['Age'][201] = 16
-    train_df['Age'][324] = 19
-    train_df['Age'][792] = 20
-    train_df['Age'][846] = 18
-    train_df['Age'][863] = 14
+    train_df.loc['Age'][159] = 5
+    train_df.loc['Age'][180] = 7
+    train_df.loc['Age'][201] = 16
+    train_df.loc['Age'][324] = 19
+    train_df.loc['Age'][792] = 20
+    train_df.loc['Age'][846] = 18
+    train_df.loc['Age'][863] = 14
 
     train_df["Deck"]=train_df["Deck"].fillna("M")
     test_df["Deck"]=test_df["Deck"].fillna("M")

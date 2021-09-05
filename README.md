@@ -17,13 +17,13 @@ build_export_output_model.py: build final model based on grid search result and 
 
 `python run.py 0 0 1`
 
-`
-explor_data = argv[1]
 
-build_model = argv[2]
+`explor_data = argv[1]`
 
-should_apply_grid_search = argv[3]
-`
+`build_model = argv[2]`
+
+`should_apply_grid_search = argv[3]`
+
 
 result after applying feature engineering: 
 

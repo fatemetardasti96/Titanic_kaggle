@@ -19,9 +19,13 @@ build_export_output_model.py: build final model based on grid search result and 
 
 `
 explor_data = argv[1]
+
 build_model = argv[2]
+
 should_apply_grid_search = argv[3]
 `
+
 result after applying feature engineering: 
+
 `RFC(max_depth=80, n_jobs=2, min_samples_split=4): 75.358%
 `

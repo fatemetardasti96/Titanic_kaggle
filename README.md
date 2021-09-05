@@ -13,7 +13,8 @@ grid_search.py: apply grid search for RFC and MLP. **Optional**
 
 build_export_output_model.py: build final model based on grid search result and write the output result into csv
 
-#RUN
+# RUN
+
 `python run.py 0 0 1`
 
 `

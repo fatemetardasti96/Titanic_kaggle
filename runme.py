@@ -32,7 +32,7 @@ if __name__ == '__main__':
     
     if should_apply_grid_search:
         print("apply grid search")
-        apply_grid_search(train_df, MLP())
+        apply_grid_search(train_df, RFC())
 
     print("export output to csv")
-    export_to_csv(train_df, test_df, RFC())
+    export_to_csv(train_df, test_df, RFC(max_depth=80, n_jobs=2, min_samples_split=4))

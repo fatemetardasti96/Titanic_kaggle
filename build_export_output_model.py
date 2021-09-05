@@ -1,7 +1,7 @@
 import pandas as pd
 
 def build_model(train_df, test_df, model):
-    df = pd.get_dummies(pd.concat([train_df[["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", 'Embarked', 'Family', 'Title', 'Deck']], test_df[["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", 'Embarked', 'Family', 'Title', 'Deck']]], ignore_index=1))
+    df = pd.get_dummies(pd.concat([train_df[["Pclass", "Sex", "Age", "Fare", 'Embarked', 'Family', 'Title', 'Deck']], test_df[["Pclass", "Sex", "Age", "Fare", 'Embarked', 'Family', 'Title', 'Deck']]], ignore_index=1))
     x_train = df.iloc[:891]
     x_test = df.iloc[891:]
     y_train = train_df["Survived"]
